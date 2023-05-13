@@ -15,7 +15,7 @@ const useCounter = (increament = true) => {
           }, 1000);
       }
       return () => clearInterval(interval);
-    }, []);
+    }, [increament]);
 
     return counter;
 }
